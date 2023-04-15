@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memes site</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="content">
+        <h2 class="content_header">Output</h2>
+        <h3 class="content_subheader">Programmer memes</h3>
+        <div class="meme_content content_img"></div>
+        <h3 class="content_subheader">Tell me something funny</h3>
+        <div class="joke_content"></div>
+        <h3 class="content_subheader">Give me some wisdom...</h3>
+        <div class="quote_content content_img"></div>
+        <h3 class="content_subheader">I want a riddle</h3>
+        <div class="riddle_content"></div>
+      </section>
+
+      <nav class="menu">
+        <div class="menu_container">
+          <h2 class="menu_header">Actions</h2>
+          <div class="menu_buttons">
+            <button class="menu_btn meme_btn">Show me a meme</button>
+            <button class="menu_btn joke_btn">Tell me a joke</button>
+            <button class="menu_btn quote_btn">Random quote</button>
+            <button class="menu_btn riddle_btn">Riddle me</button>
+            <button class="menu_btn menu_btn-answer answer_btn">
+              Reveal Riddle Answer
+            </button>
+          </div>
+        </div>
+      </nav>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
