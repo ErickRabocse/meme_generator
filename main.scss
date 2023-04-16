@@ -14,6 +14,7 @@ $color-hover: #b7b5e440;
 $font-nav: "Lato", sans-serif;
 $font-output: "Roboto Mono", monospace;
 
+//GLOBAL
 body {
   height: 100vh;
   padding: 20px;
@@ -26,6 +27,10 @@ body {
   @media (max-width: 800px) {
     height: 100%;
   }
+}
+h2 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 0, 0.6);
 }
 
 //MAIN CONTAINER BOX
@@ -49,15 +54,19 @@ body {
   font-family: $font-output;
   &_header {
     margin: 20px 0;
+    @media (max-width: 800px) {
+      margin: 10px 0;
+    }
   }
   &_subheader {
     margin: 15px 0;
     list-style: none;
   }
   @media (max-width: 800px) {
+    border-top: 1px solid $color-hover;
     width: 100%;
     padding: 10px;
-    border: 1px solid white;
+    padding-bottom: 150px;
   }
 }
 
@@ -109,10 +118,12 @@ p {
     flex-direction: column;
     justify-content: center;
     @media (max-width: 800px) {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      //   flex-direction: row;
+      //   justify-content: center;
+      //   align-items: center;
       padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
     }
   }
   &_btn {
@@ -126,8 +137,8 @@ p {
     border: 2px solid $color-hover;
     border-radius: 5px;
     @media (max-width: 800px) {
-      width: 100px;
-      margin: 10px;
+      width: 140px;
+      margin: 5px;
     }
     &:hover {
       background-color: $color-hover;
@@ -140,6 +151,15 @@ p {
       &:hover {
         border: 2px solid $color-hover;
         background-color: transparent;
+      }
+      @media (max-width: 800px) {
+        //   flex-direction: row;
+        //   justify-content: center;
+        //   align-items: center;
+        display: grid;
+        grid-column: span 2;
+        width: 100%;
+        height: 30px;
       }
     }
   }

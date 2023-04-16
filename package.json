@@ -1,7 +1,6 @@
 {
   "name": "project_6_meme_generator",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "compile": "sass --watch --no-source-map main.scss style.css"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.62.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickRabocse/meme_generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ErickRabocse/meme_generator/issues"
+  },
+  "homepage": "https://github.com/ErickRabocse/meme_generator#readme",
+  "description": ""
 }
