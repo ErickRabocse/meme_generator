@@ -90,7 +90,7 @@ function randomElement(arr) {
 }
 
 function showMeme() {
-  //Store random fn into a var, to use it as a parameter
+  //Store random fn value returned into a var, to use it as a parameter
   const randomUrl = randomElement(images);
   //Select div where the content is to be inserted
   const memeContainer = document.querySelector(".meme_content");
@@ -155,7 +155,7 @@ function showAnswer() {
   const container = document.querySelector(".riddle_content");
   const riddle = container.querySelector("p");
   //const answer = container.querySelectorAll("p").item(1).textContent;
-  //The id riddle_answer was previously set when the riddle was created!
+  //The id riddle_answer was previously set when the riddle was created in the showRiddle fn!
   const answer = document.querySelector("#riddle_answer");
   //With this if, we make sure that only when the riddle is present with a hidden answer, the answer should be revealed
   if (riddle && answer.hidden) {

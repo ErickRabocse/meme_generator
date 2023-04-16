@@ -118,9 +118,6 @@ p {
     flex-direction: column;
     justify-content: center;
     @media (max-width: 800px) {
-      //   flex-direction: row;
-      //   justify-content: center;
-      //   align-items: center;
       padding: 10px;
       display: grid;
       grid-template-columns: repeat(2, 50%);
@@ -153,12 +150,9 @@ p {
         background-color: transparent;
       }
       @media (max-width: 800px) {
-        //   flex-direction: row;
-        //   justify-content: center;
-        //   align-items: center;
         display: grid;
         grid-column: span 2;
-        width: 100%;
+        width: 96.5%;
         height: 30px;
       }
     }
